@@ -1,8 +1,6 @@
 OPTS+=" --disable-static \
         --disable-update-mime \
-        --disable-schemas-compile" &&
-
-OPTS+=" --libexec=/usr/lib/gcr" &&
+        --disable-schemas-compile"
 
 default_build &&
 

@@ -1,5 +1,6 @@
-OPTS+=" --disable-migration --disable-static --disable-maintainer-mode" &&
+OPTS+=" --disable-static --disable-maintainer-mode --without-wwan"
 
-OPTS+=" --libexecdir=/usr/lib/networkmanager" &&
+#Linux-PAM is getting build without producing libselinux
+OPTS+=" --without-selinux" 
 
 default_build

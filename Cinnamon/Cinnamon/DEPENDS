@@ -1,17 +1,13 @@
 depends gstreamer
 depends clutter-gtk
 depends librsvg
-depends lxml
+depends python-lxml
 depends accountsservice
-depends caribou
 depends cjs
 depends cinnamon-control-center
 depends cinnamon-session
-depends gnome-settings-daemon
-depends libgnome-keyring
+depends gnome-backgrounds
 depends muffin
-depends polkit-gnome
-depends webkitgtk3
 
 # fails to start without working themes
 depends cinnamon-themes

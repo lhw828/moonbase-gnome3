@@ -1,5 +1,3 @@
-OPTS+=" --disable-static --disable-man-pages" &&
+OPTS+=" --prefix /usr -Dpackagekit=false -Denable_docs=false" &&
 
-OPTS+=" --libexecdir=/usr/lib/gnome-color-manager" &&
-
-default_build
+default_meson_build

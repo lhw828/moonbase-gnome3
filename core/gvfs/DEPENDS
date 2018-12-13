@@ -4,22 +4,24 @@ depends gtk+-3
 depends openssh
 depends libgudev
 depends psmisc
+depends gcr
+depends polkit
+depends gtk-doc
 depends intltool
 
-optional_depends gcr        "--enable-gcr"     "--disable-gcr"     "for crypto UI and parsing support"
 optional_depends libsecret  "--enable-keyring" "--disable-keyring" "for storing secrets support"
 optional_depends libarchive "--enable-archive" "--disable-archive" "for archive support"
 optional_depends libsoup    "--enable-http"    "--disable-http"    "for FTP/HTTP/WebDAV support"
 optional_depends libcdio    "--enable-cdda"    "--disable-cdda"    "for CDDA support"
 optional_depends libgphoto2 "--enable-gphoto2" "--disable-gphoto2" "for Gphoto2 support"
 optional_depends libmtp     "--enable-libmtp"  "--disable-libmtp"  "for mtp support"
-optional_depends libnfs     "--enable-libnfs"  "--disable-libnfs"  "for NFS support"
+optional_depends libnfs     "--enable-nfs"     "--disable-nfs"     "for NFS support"
 optional_depends fuse       "--enable-fuse"    "--disable-fuse"    "for FUSE support"
 optional_depends samba      "--enable-samba"   "--disable-samba"   "for Samba support"
 optional_depends avahi      "--enable-avahi"   "--disable-avahi"   "for avahi support"
 optional_depends udisks2    "--enable-udisks2" "--disable-udisks2" "for udisk support"
 
-optional_depends gtk-doc \
-                 "--enable-documentation" \
-                 "--disable-documentation"\
-                 "for documentation generating"
+#optional_depends gtk-doc \
+#                 "--enable-documentation" \
+#                 "--disable-documentation"\
+#                 "for documentation generating"

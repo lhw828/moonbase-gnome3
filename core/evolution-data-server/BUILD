@@ -1,5 +1,2 @@
-OPTS+=" --enable-vala-bindings --disable-uoa" &&
-
-OPTS+=" --libexecdir=/usr/lib/evolution-data-server" &&
-
-default_build
+OPTS+=" -DENABLE_UOA=OFF" &&
+default_cmake_build

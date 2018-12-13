@@ -4,8 +4,10 @@ OPTS+=" --enable-ipv6 \
         --without-plymouth \
         --without-console-kit \
         --without-tcp-wrappers \
-        --disable-schemas-compile" &&
+        --disable-schemas-compile"
 
-OPTS+=" --libexecdir=/usr/lib/gdm" &&
+if module_installed systemd; then
+   OPTS+=" --enable-systemd-journal"
+fi &&
 
 default_build

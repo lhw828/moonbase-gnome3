@@ -1,14 +1,1 @@
-./autogen.sh --prefix=/usr \
-             --sysconfdir=/etc \
-             --libexecdir=/usr/lib/nemo \
-             --localstatedir=/var \
-             --disable-static \
-             --disable-update-mimedb \
-             --disable-tracker \
-             --disable-gtk-doc-html \
-             --disable-schemas-compile \
-             $OPTS  &&
-
-#sedit "s:-Werror:-W :" src/Makefile &&
-
-default_make
+default_meson_build

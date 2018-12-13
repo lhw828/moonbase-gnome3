@@ -1,7 +1,6 @@
 OPTS+=" --disable-static \
+        --disable-egl-device \
         --disable-schemas-compile \
-        --enable-compile-warnings=minimum" &&
-
-OPTS+=" --libexecdir=/usr/lib/$MODULE" &&
+        --enable-compile-warnings=minimum"
 
 default_build

@@ -1,8 +1,5 @@
-OPTS+=" --enable-tracker=no \
-        --disable-static \
-        -disable-update-mimedb \
-        --disable-schemas-compile" &&
+OPTS+=" -D docs=false \
+        -D selinux=false \
+        -D enable-extensions=false"
 
-OPTS+=" --libexecdir=/usr/lib/$MODULE" &&
-
-default_build
+default_meson_build

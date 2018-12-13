@@ -1,12 +1,12 @@
           MODULE=nemo
-         VERSION=3.6.4
+         VERSION=4.0.5
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=http://github.com/linuxmint/nemo/archive/$VERSION.tar.gz
-      SOURCE_VFY=sha256:22efeb1f94eaa7178bf675d364102efa559ee67f9bb1055330b62ad0c566ea99
+      SOURCE_VFY=sha256:d2f43bca97063bc74370484c6348ba45587b6a1ff8484689263c4d8ad4b2294a
         WEB_SITE=http://github.com/linuxmint/nemo/
          ENTERED=20130302
-         UPDATED=20171120
-           SHORT="Cinnamon file manager (Nautilus fork)"
+         UPDATED=20181211
+           SHORT="Cinnamon file manager (a Nautilus fork)"
 
 cat <<EOF
 Nemo is the file manager for the Cinnamon desktop environment.

@@ -1,9 +1,2 @@
-OPTS+=" --disable-icon-update \
-        --disable-desktop-update \
-        --disable-schemas-compile" &&
-
-./configure --prefix=/usr \
-            --libexec=/usr/lib \
-            $OPTS &&
-
-default_make
+OPTS+=" -Dpublishers=$(echo $TARGETLIST | sed s/\ /,/g) -Dunity-support=false -Dface-detection=false"
+default_meson_build

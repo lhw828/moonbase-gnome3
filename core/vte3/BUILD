@@ -1,6 +1,4 @@
-OPTS+=" --disable-static" &&
-
-OPTS+=" --libexecdir=/usr/lib/vte" &&
+OPTS+=" --disable-static"
 
 if [ "`get_module_config DOCS`" = "n" ]; then
   sedit "s/src termcaps po doc perf/src termcaps po perf/g" Makefile.in

@@ -1,3 +1,4 @@
-OPTS+=" --disable-static --libexecdir=/usr/lib/$MODULE" &&
+OPTS+=" --disable-statici \
+	--disable-gtk-doc"
 
 default_build

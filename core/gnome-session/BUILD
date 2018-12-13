@@ -1,6 +1,5 @@
-OPTS+=" --disable-gconf \
-        --disable-schemas-compile" &&
 
-OPTS+=" --libexecdir=/usr/lib/gnome-session" &&
+OPTS+=" -D enable_docs=false \
+        -D enable-consolekit=false"
 
-default_build
+default_meson_build

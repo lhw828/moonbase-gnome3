@@ -1,15 +1,15 @@
           MODULE=gnome-terminal
-         VERSION=3.26.2
+         VERSION=3.30.2
           SOURCE=$MODULE-$VERSION.tar.xz
       SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
-      SOURCE_VFY=sha256:3a9ba414a814569476515275ad303d8056f296b2669234447712559aa97005b0
+      SOURCE_VFY=sha256:6b1fc2720e3bfc592645d41e38d0d3a0f2bdf5ef7bce490b2d5c8ba39f395e38
         WEB_SITE=http://www.gnome.org
          ENTERED=20020714
-         UPDATED=20171031
+         UPDATED=20181023
            SHORT="The GNOME terminal emulator"
 
 cat << EOF
-GNOME Terminal is a terminal emulation application. It features the
-ability to use multiple terminals in a single windows (tabs) and has
-user-profiles supports.
+GNOME Terminal is a terminal emulation application. It features the ability
+to use multiple terminals in a single windows (tabs) and has user-profiles
+supports.
 EOF

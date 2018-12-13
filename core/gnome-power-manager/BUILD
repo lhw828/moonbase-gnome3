@@ -1,5 +1,5 @@
-OPTS+=" --disable-schemas-compile" &&
+OPTS+=" --prefix /usr \
+        -D docbook2man=false \
+        -D enable-tests=false"
 
-OPTS+=" --libexecdir=/usr/lib/$MODULE" &&
-
-default_build
+default_meson_build

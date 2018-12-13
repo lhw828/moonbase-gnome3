@@ -1,20 +1,19 @@
-# BUILD OPTIONS IN CONFIGURE/DEPENDS WORK AGAIN!
           MODULE=webkit2gtk3
-         VERSION=2.13.1
+         VERSION=2.22.4
           SOURCE=webkitgtk-$VERSION.tar.xz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/webkitgtk-$VERSION
-      SOURCE_URL=http://www.webkitgtk.org/releases
-      SOURCE_VFY=sha256:e9932990b4e86c752c3e79968a3dfe9659f3712cd6ea5f5676825d606137f3db
-        WEB_SITE=http://www.webkit.org
+      SOURCE_URL=https://www.webkitgtk.org/releases
+      SOURCE_VFY=sha256:fab5be2883802352ae0e735dd1eff4bc18abaff7ac78689cec72eb2f611943b8
+        WEB_SITE=https://www.webkit.org
          ENTERED=20070919
-         UPDATED=20160603
+         UPDATED=20181122
            SHORT="gtk+ web rendering engine"
 
 cat << EOF
-WebKitGTK+ is a web content engine, derived from KHTML and KJS from KDE,
-and used primarily in Apple's Safari browser. It is made to be embedded
-in other applications, such as mail readers, or web browsers.
-It is able to display content such as HTML, SVG, XML, and others. It
-also supports DOM, XMLHttpRequest, XSLT, CSS, Javascript/ECMAscript
-and more.
+WebKitGTK+ is a web content engine, derived from KHTML and KJS from KDE, and
+used primarily in Apple's Safari browser. It is made to be embedded in other
+applications, such as mail readers, or web browsers. It is able to display
+content such as HTML, SVG, XML, and others.
+It also supports DOM, XMLHttpRequest, XSLT, CSS, Javascript/ECMAscript and
+more.
 EOF

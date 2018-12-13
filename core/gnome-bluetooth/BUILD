@@ -1,7 +1,5 @@
-OPTS+=" --disable-schemas-compile \
-        --disable-desktop-update \
-        --disable-icon-update" &&
+OPTS+=" --prefix /usr -Denable_docs=false"
 
-default_build
+default_meson_build &&
 
 install -m0644 $SCRIPT_DIRECTORY/61-gnome-bluetooth-rfkill.rules /usr/lib/udev/rules.d/

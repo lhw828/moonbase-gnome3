@@ -2,6 +2,6 @@ depends gtk+-3
 depends librsvg
 depends xkeyboard-config
 depends dejavu-ttf
-depends cantarell-fonts
+depends intltool
 
-optional_depends gtk-engines2 "" "" "for HighContrast GTK theme"
+#depends cantarell-fonts

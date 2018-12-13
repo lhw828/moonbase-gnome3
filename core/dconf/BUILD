@@ -1,3 +1,1 @@
-OPTS+=" --libexecdir=/usr/lib/$MODULE" &&
-
-default_build
+default_meson_build
